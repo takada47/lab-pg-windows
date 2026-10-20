@@ -1,3 +1,5 @@
+-- Migration 001: создание аудитной таблицы.
+-- информационная история об изменений 
 CREATE TABLE IF NOT EXISTS audit_log (
     id bigserial PRIMARY KEY,
     event_type text NOT NULL,
